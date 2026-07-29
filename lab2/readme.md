@@ -10,7 +10,8 @@ it direct connect with client OS rater than browser
   - appendFile()
 - Directory Management
   - mkdir()
-  - rmdir()
+  - rmdir() - depricated
+  - rm()
   - readdir()
 - Metadata/ Information
   - stat()
