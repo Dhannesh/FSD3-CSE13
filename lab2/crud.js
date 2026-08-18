@@ -14,6 +14,12 @@ const getCart = async () => {
   return JSON.parse(data);
 };
 
+const addToCart = async (item) => {
+  const products = await getCart();
+  products.push(item);
+  await saveCart(products);
+};
+
 const main = async () => {
   const cin = readline.createInterface({ input: stdin, output: stdout });
   let choice;
@@ -27,6 +33,7 @@ const main = async () => {
     choice = await cin.question("Enter your choice:");
     switch (Number(choice)) {
       case 1:
+        await addToCart({ id: 101, name: "Mobile", price: 15000, qty: 3 });
         console.log("add to cart");
         break;
       case 2:
