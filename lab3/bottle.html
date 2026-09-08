@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AquaSmart Bottle - Smart Water Bottle</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f5f9fc;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(135deg, #00b4db, #0083b0);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: auto;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 25px;
+        background: white;
+        color: #0083b0;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 0;
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .hero-image {
+        flex: 1;
+        text-align: center;
+        min-width: 300px;
+      }
+
+      .hero-image img {
+        max-width: 350px;
+        width: 100%;
+      }
+
+      .features {
+        background: white;
+        padding: 70px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .section-title h2 {
+        color: #0083b0;
+        font-size: 2.3rem;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: #f8fbff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      .card h3 {
+        color: #0083b0;
+        margin-bottom: 10px;
+      }
+
+      .stats {
+        padding: 70px 0;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+      }
+
+      .stat {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .stat h2 {
+        color: #00b4db;
+        font-size: 2.5rem;
+      }
+
+      .app-section {
+        background: linear-gradient(135deg, #0083b0, #00b4db);
+        color: white;
+        padding: 70px 20px;
+        text-align: center;
+      }
+
+      .app-section img {
+        width: 220px;
+        margin-top: 25px;
+      }
+
+      .pricing {
+        padding: 70px 0;
+      }
+
+      .price-card {
+        max-width: 450px;
+        margin: auto;
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .price {
+        font-size: 3rem;
+        color: #0083b0;
+        margin: 15px 0;
+      }
+
+      footer {
+        background: #0f172a;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>💧 AquaSmart Bottle</h1>
+      <p>
+        Stay hydrated with AI-powered reminders, real-time water tracking,
+        temperature monitoring, and seamless smartphone connectivity.
+      </p>
+      <a href="#" class="btn">Pre-Order Now</a>
+    </header>
+
+    <div class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Smart Hydration for a Healthier Life</h2>
+          <p>
+            AquaSmart Bottle automatically tracks your water intake, glows when
+            it's time to drink, and syncs with your mobile app to help you
+            achieve your daily hydration goals.
+          </p>
+
+          <br />
+
+          <ul>
+            <li>✔ Real-time hydration tracking</li>
+            <li>✔ Bluetooth app connectivity</li>
+            <li>✔ Temperature display</li>
+            <li>✔ Rechargeable battery</li>
+            <li>✔ Smart reminder notifications</li>
+          </ul>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=500&q=80"
+            alt="Smart Water Bottle"
+          />
+        </div>
+      </section>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Key Features</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="card">
+            <h3>📊 Intake Tracking</h3>
+            <p>
+              Automatically records every sip and displays your daily hydration
+              progress.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>🔔 Smart Reminders</h3>
+            <p>
+              LED notifications and mobile alerts remind you when it's time to
+              drink water.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>🌡 Temperature Sensor</h3>
+            <p>
+              Instantly check the temperature of your beverage with the smart
+              touch display.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>📱 Mobile App</h3>
+            <p>
+              Sync hydration data, set goals, and view analytics directly from
+              your smartphone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Users Love AquaSmart</h2>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat">
+            <h2>98%</h2>
+            <p>User Satisfaction</p>
+          </div>
+
+          <div class="stat">
+            <h2>30 Days</h2>
+            <p>Battery Life</p>
+          </div>
+
+          <div class="stat">
+            <h2>1L</h2>
+            <p>Capacity</p>
+          </div>
+
+          <div class="stat">
+            <h2>IPX7</h2>
+            <p>Water Resistant</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-section">
+      <h2>Connect With AquaSmart App</h2>
+
+      <p>
+        Monitor hydration goals, daily trends, and health insights through our
+        companion mobile application.
+      </p>
+
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/561/561188.png"
+        alt="Mobile App"
+      />
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <div class="price-card">
+          <h2>AquaSmart Bottle Pro</h2>
+          <div class="price">$69</div>
+
+          <p>✓ Smart LED Hydration Alerts</p>
+          <p>✓ Bluetooth Connectivity</p>
+          <p>✓ Temperature Monitoring</p>
+          <p>✓ Mobile App Integration</p>
+          <p>✓ 30-Day Battery Life</p>
+
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 AquaSmart Bottle. Smart Hydration Starts Here.</p>
+    </footer>
+  </body>
+</html>
