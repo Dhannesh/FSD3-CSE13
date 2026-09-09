@@ -60,3 +60,26 @@ the content type and status code can be send back to client by two ways
 1. res.writeHead
 2. res.setHeader
 3. res.statusCode
+
+## send html file to client
+
+1. html file
+
+- read html file using createReadStream
+- pipe it with res object
+
+2. html content
+   send any html tags/content by using
+   res.end('<any html tag>')
+
+## JSON
+
+```
+{
+  id:1,
+  name:'Mobile',
+  price:25000,
+  rating:4.5,
+  review:200
+}
+```
