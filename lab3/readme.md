@@ -83,3 +83,16 @@ the content type and status code can be send back to client by two ways
   review:200
 }
 ```
+
+## Headers
+
+1. text/plain -> text file
+2. text/html -> html contents/file
+3. application/json -> json contents/ file
+4. text/css -> stylesheet
+5. application/form-data -> for uploading file
+6. application/auth -> for tokens
+   the headers can be set by res object at server side by two ways
+
+7. res.setHeader()
+8. res.writeHead()
