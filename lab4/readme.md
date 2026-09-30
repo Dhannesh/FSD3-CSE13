@@ -13,3 +13,13 @@
    }
 7. create prg1.js in folder
 8. add folderName/node_modules in .gitignore
+
+## Map
+
+```
+array.map((item)=>{
+   return
+})
+
+array.map((item)=> ())
+```
